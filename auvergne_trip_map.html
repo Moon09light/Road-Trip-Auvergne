@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Road Trip Doux – Auvergne 4‑11 août 2025</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-sA+e2e0pEyUBf9BL9C2qLWb1qzY2zNd4O85667Tm9HM="
+  crossorigin=""
+/>
+<style>html,body,#map{height:100%;margin:0;}</style>
+</head>
+<body>
+<div id="map"></div>
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-odtCjLJzhC1/7kGf8FVugk0Kk2hziZ5xjvAzGZkKCtA="
+  crossorigin=""
+></script>
+<script>
+var map = L.map('map').setView([45.65, 2.9], 8);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '© OpenStreetMap contributors'
+}).addTo(map);
+
+L.marker([45.516, 2.93]).addTo(map).bindPopup('Jour 1 : Besse‑et‑Saint‑Anastaise&lt;br&gt;Village médiéval, installation');
+L.marker([45.497, 2.9]).addTo(map).bindPopup('Jour 2 : Lac Pavin&lt;br&gt;Tour du lac volcanique');
+L.marker([45.586, 2.984]).addTo(map).bindPopup('Jour 2 : Saint‑Nectaire&lt;br&gt;Église romane &amp; fromages');
+L.marker([45.572, 2.808]).addTo(map).bindPopup('Jour 3 : Le Mont‑Dore&lt;br&gt;Station thermale');
+L.marker([45.528, 2.808]).addTo(map).bindPopup('Jour 3 : Puy de Sancy (sommet)&lt;br&gt;Téléphérique &amp; panorama');
+L.marker([45.572, 2.824]).addTo(map).bindPopup('Jour 3 : Cascade du Queureuilh&lt;br&gt;Balade cascade');
+L.marker([45.933, 2.667]).addTo(map).bindPopup('Jour 4 : Méandre de Queuille (Belvédère Paradis)&lt;br&gt;Vue spectaculaire sur l’Allier');
+L.marker([45.778, 3.084]).addTo(map).bindPopup('Jour 5 : Clermont‑Ferrand&lt;br&gt;Ville historique : cathédrale, Michelin');
+L.marker([45.692, 2.853]).addTo(map).bindPopup('Jour 6 : Orcival&lt;br&gt;Basilique romane');
+L.marker([45.652, 2.837]).addTo(map).bindPopup('Jour 6 : Lac de Guéry&lt;br&gt;Boucle facile autour du lac');
+L.marker([45.653, 2.831]).addTo(map).bindPopup('Jour 6 : Roches Tuilière &amp; Sanadoire&lt;br&gt;Point de vue');
+L.marker([45.373, 2.568]).addTo(map).bindPopup('Jour 7 : Lac de Lastioulles&lt;br&gt;Balade &amp; baignade');
+</script>
+</body>
+</html>
